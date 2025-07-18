@@ -1,3 +1,4 @@
+# Тестовый комментарий для проверки CI/CD pipeline
 from fastapi import FastAPI, Depends, HTTPException, status, Form
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlmodel import select

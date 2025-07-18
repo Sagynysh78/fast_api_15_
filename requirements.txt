@@ -13,4 +13,4 @@ pytest-asyncio
 aiosqlite
 celery
 redis
-redis
+pytest

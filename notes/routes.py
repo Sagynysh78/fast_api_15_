@@ -58,7 +58,7 @@ async def read_notes(
     notes = result.scalars().all()
     
     # Convert to dict for caching (Pydantic models need to be serialized)
-    notes_data = [note.dict() for note in notes]
+    notes_data = [note.model_dump() for note in notes]
     
     # Store in cache
     await cache_manager.set(cache_key, notes_data)
